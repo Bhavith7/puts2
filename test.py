@@ -35,15 +35,10 @@ for i in range(0,len(n1)):
 	div_from_test.append(round(test_div,3))
 
 
-
 	url_add = 'http://127.0.0.1:5000/add'
 	r1 = requests.get(url_add, params=PARAM)
 	data1 = r1.json()
-<<<<<<< HEAD
 	add_from_script.append(round(data1,3)) 
-=======
-	add_from_script.append(round(data1,3))
->>>>>>> Division
 
 	url_sub = 'http://127.0.0.1:5000/sub'
 	r2 = requests.get(url_sub, params=PARAM)
@@ -55,14 +50,11 @@ for i in range(0,len(n1)):
 	data3 = r3.json()
 	mul_from_script.append(round(data3,3))
 
-<<<<<<< HEAD
-=======
 	url_div = 'http://127.0.0.1:5000/div'
 	r4 = requests.get(url_div, params=PARAM)
 	data4 = r4.json()
 	div_from_script.append(round(data4,3))
-	print(div_from_script)
->>>>>>> Division
+
 
 	if add_from_script[i] == add_from_test[i]:
 		print "Tested addition successfully:OK"
