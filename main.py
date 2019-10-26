@@ -31,6 +31,14 @@ def multiplication():
     C=value1*value2
     result=float(C)
     return " %s \n" %result
+
+@app.route('/div')
+def division():
+    value1=request.args.get('A',default = 0, type = Fraction)
+    value2=request.args.get('B',default = 0, type = Fraction)
+    C=value1/value2
+    result=float(C)
+    return " %s \n" %result
    
 
 
