@@ -35,7 +35,6 @@ for i in range(0,len(n1)):
 	div_from_test.append(round(test_div,3))
 
 
-
 	url_add = 'http://127.0.0.1:5000/add'
 	r1 = requests.get(url_add, params=PARAM)
 	data1 = r1.json()
@@ -55,7 +54,7 @@ for i in range(0,len(n1)):
 	r4 = requests.get(url_div, params=PARAM)
 	data4 = r4.json()
 	div_from_script.append(round(data4,3))
-	print(div_from_script)
+
 
 	if add_from_script[i] == add_from_test[i]:
 		print "Tested addition successfully:OK"
