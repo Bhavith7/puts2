@@ -21,7 +21,7 @@ for i in range(len(n1)):
 	url_add = 'http://127.0.0.1:5000/add'
 	r = requests.get(url_add, params=PARAM)
 	data = r.json()
-	add_from_script.append(float(data)) 
+	add_from_script.append(data) 
 
 	if add_from_script[i] == add_from_test[i]:
 		print "Tested successfully:OK"
