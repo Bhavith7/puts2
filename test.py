@@ -24,14 +24,14 @@ for i in range(len(n1)):
 	sub_from_test.append(round(test_sub,3))
 
 	url_add = 'http://127.0.0.1:5000/add'
-	r = requests.get(url_add, params=PARAM)
-	data = r.json()
-	add_from_script.append(data)
+	r1 = requests.get(url_add, params=PARAM)
+	data1 = r1.json()
+	add_from_script.append(data1)
 
 	url_sub = 'http://127.0.0.1:5000/sub'
-	r = requests.get(url_sub, params=PARAM)
-	data = r.json()
-	sub_from_script.append(round(data,3))
+	r2 = requests.get(url_sub, params=PARAM)
+	data2 = r2.json()
+	sub_from_script.append(round(data2,3))
 
 	if add_from_script[i] == add_from_test[i]:
 		print "Tested addition successfully:OK"
