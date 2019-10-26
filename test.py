@@ -3,6 +3,7 @@
 import unittest
 import requests
 import json
+from fractions import Fraction
 
 
 n1 = [5,7.1,18/3,5/5,7.885]
