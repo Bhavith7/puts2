@@ -1,5 +1,5 @@
 #!usr/bin/python3
-from __future__ import division
+
 import unittest
 import requests
 import json
